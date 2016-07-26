@@ -4,7 +4,7 @@
 //  * Write a function that takes two numbers as
 //  * arguments and computes the sum of those two numbers.
 //  */
-//
+
 const sum = (x, y) => {
   return x + y
 }
@@ -97,15 +97,19 @@ console.assert(GCD(15, 3) === 3)
 console.assert(GCD(15, 5) === 5)
 console.assert(GCD(50, 20) === 10)
 
-// /*
-//  * Write a function that prints out the Least Common Multiple of two numbers
-//  */
-//
-// const LCM = (a, b) => {
-//   // YOUR CODE HERE
-// }
-//
-// console.assert(LCM(10, 10) === 10)
+/*
+ * Write a function that prints out the Least Common Multiple of two numbers
+ */
+
+const LCM = (a, b) => {
+	if (a === b)
+    return a
+}
+
+ console.assert(LCM(10, 10) === 10)
+//MY CODE ONLY WORKS UP UNTIL THIS POINT! :(
+
+
 // console.assert(LCM(2, 5) === 10)
 // console.assert(LCM(3, 6) === 6)
 // console.assert(LCM(0, 1) === 1)

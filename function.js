@@ -5,30 +5,30 @@
 //  * arguments and computes the sum of those two numbers.
 //  */
 //
-// const sum = (x, y) => {
-//   return x + y
-// }
-//
-// console.assert(sum(8, 11) === 19)
-// console.assert(sum(4, 100) === 104)
-//
+const sum = (x, y) => {
+  return x + y
+}
+
+console.assert(sum(8, 11) === 19)
+console.assert(sum(4, 100) === 104)
+
 // /*
 //  * Write a function that calculates the sum of all the numbers in an array
 //  */
 //
-// const sumOfArray = (arr) => {
-//   let sum = 0
-//   for (let i = 0; i < arr.length; i++) {
-//         sum = sum + arr[i];
-//     }
-//   return sum
-// }
-//
-// console.assert(sumOfArray([1, 2]) === 3)
-// console.assert(sumOfArray([]) === 0)
-// console.assert(sumOfArray([1, 2, 3]) === 6)
-// console.assert(sumOfArray([10, 9, 8]) === 27)
-//
+const sumOfArray = (arr) => {
+  let sum = 0
+  for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+    }
+  return sum
+}
+
+console.assert(sumOfArray([1, 2]) === 3)
+console.assert(sumOfArray([]) === 0)
+console.assert(sumOfArray([1, 2, 3]) === 6)
+console.assert(sumOfArray([10, 9, 8]) === 27)
+
 // /**
 //  * Part 1
 //  *
@@ -40,17 +40,17 @@
 //  * of a string like an array: `str[0]`
 //  */
 //
-// const reverse = (str) => {
-//
-//   //   start; how long ; changed
-//   for ( let i = str.length ; i <= str.length   ; i--   ) {
-//   }
-//   return reverse
-// }
-//
-// console.assert(reverse('books') === 'skoob')
-// console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
-//
+const reverse = (str) => {
+
+  //   start; how long ; changed
+  for ( let i = str.length ; i <= str.length   ; i--   ) {
+  }
+  return reverse
+}
+
+console.assert(reverse('books') === 'skoob')
+console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
+
 // /*
 //  * Write a function findLongestWord() that takes an
 //  * string returns the first, longest word in the array.
@@ -59,23 +59,23 @@
 //  * Hint: Strings have a function called: `split()`, look it up on MDN
 //  */
 //
-// const findLongestWord = (sentence) => {
-//
-//   let longest_word = "";
-//   let words = sentence.split(" ")
-//   for (let i = 0; i < words.length; i++)
-//   {
-//     let word = words[i]
-//     if (word.length > longest_word.length)
-//     {
-//       longest_word = word
-//     }
-//   }
-//   return longest_word
-// }
-//
-// console.assert(findLongestWord('book dogs') === 'book')
-// console.assert(findLongestWord("dont mess with Texas") === 'Texas')
+const findLongestWord = (sentence) => {
+
+  let longest_word = "";
+  let words = sentence.split(" ")
+  for (let i = 0; i < words.length; i++)
+  {
+    let word = words[i]
+    if (word.length > longest_word.length)
+    {
+      longest_word = word
+    }
+  }
+  return longest_word
+}
+
+console.assert(findLongestWord('book dogs') === 'book')
+console.assert(findLongestWord("dont mess with Texas") === 'Texas')
 
 /*
  * --- ADVENTURE MODE ---
@@ -87,9 +87,11 @@
  */
 
 const GCD = (a, b) => {
-  // YOUR CODE HERE
+  if (b == 0)
+   {return a}
+ else
+   {return GCD(b, a % b)}
 }
-
 console.assert(GCD(5, 1) === 1)
 console.assert(GCD(15, 3) === 3)
 console.assert(GCD(15, 5) === 5)

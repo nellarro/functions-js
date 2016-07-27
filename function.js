@@ -1,33 +1,33 @@
 'use strict'
 
-// /*
-//  * Write a function that takes two numbers as
-//  * arguments and computes the sum of those two numbers.
-// //  */
-//
-// const sum = (x, y) => {
-//   return x + y
-// }
+/*
+ * Write a function that takes two numbers as
+ * arguments and computes the sum of those two numbers.
+//  */
 
-// console.assert(sum(8, 11) === 19)
-// console.assert(sum(4, 100) === 104)
+const sum = (x, y) => {
+  return x + y
+}
+
+console.assert(sum(8, 11) === 19)
+console.assert(sum(4, 100) === 104)
 //
-// // /*
-// //  * Write a function that calculates the sum of all the numbers in an array
-// //  */
-// //
-// const sumOfArray = (arr) => {
-//   let sum = 0
-//   for (let i = 0; i < arr.length; i++) {
-//         sum = sum + arr[i];
-//     }
-//   return sum
-// }
+// /*
+//  * Write a function that calculates the sum of all the numbers in an array
+//  */
 //
-// console.assert(sumOfArray([1, 2]) === 3)
-// console.assert(sumOfArray([]) === 0)
-// console.assert(sumOfArray([1, 2, 3]) === 6)
-// console.assert(sumOfArray([10, 9, 8]) === 27)
+const sumOfArray = (arr) => {
+  let sum = 0
+  for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+    }
+  return sum
+}
+
+console.assert(sumOfArray([1, 2]) === 3)
+console.assert(sumOfArray([]) === 0)
+console.assert(sumOfArray([1, 2, 3]) === 6)
+console.assert(sumOfArray([10, 9, 8]) === 27)
 
 // /**
 //  * Part 1
@@ -39,7 +39,7 @@
 //  * Hint: You can access the indivdual characters
 //  * of a string like an array: `str[0]`
 //  */
-//
+
 const reverse = (str) => {
 
   //   start; how long ; changed
@@ -53,63 +53,63 @@ const reverse = (str) => {
 console.assert(reverse('books') === 'skoob')
 console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
 
-// /*
-//  * Write a function findLongestWord() that takes an
-// //  * string returns the first, longest word in the array.
-// //  *
-// //  * i.e. findLongestWord("book dogs") should return "book"
-// //  * Hint: Strings have a function called: `split()`, look it up on MDN
-// //  */
-// //
-// const findLongestWord = (sentence) => {
+/*
+ * Write a function findLongestWord() that takes an
+//  * string returns the first, longest word in the array.
+//  *
+//  * i.e. findLongestWord("book dogs") should return "book"
+//  * Hint: Strings have a function called: `split()`, look it up on MDN
+//  */
 //
-//   let longest_word = "";
-//   let words = sentence.split(" ")
-//   for (let i = 0; i < words.length; i++)
-//   {
-//     let word = words[i]
-//     if (word.length > longest_word.length)
-//     {
-//       longest_word = word
-//     }
-//   }
-//   return longest_word
-// }
-//
-// console.assert(findLongestWord('book dogs') === 'book')
-// console.assert(findLongestWord("dont mess with Texas") === 'Texas')
-//
-// /*
+const findLongestWord = (sentence) => {
+
+  let longestWord = "";
+  let words = sentence.split(" ")
+  for (let i = 0; i < words.length; i++)
+  {
+    let word = words[i]
+    if (word.length > longest_word.length)
+    {
+      longestWord = word
+    }
+  }
+  return longestWord
+}
+
+console.assert(findLongestWord('book dogs') === 'book')
+console.assert(findLongestWord("dont mess with Texas") === 'Texas')
+
+/*
 //  * --- ADVENTURE MODE ---
-//  */
-//
-// /*
-//  * Write a function that finds the Greatest Common Denominator of two numbers
-//  * - if no GCD exists, return 1
-//  */
-//
-// const GCD = (a, b) => {
-//   if (b == 0)
-//    {return a}
-//  else
-//    {return GCD(b, a % b)}
-// }
-// console.assert(GCD(5, 1) === 1)
-// console.assert(GCD(15, 3) === 3)
-// console.assert(GCD(15, 5) === 5)
-// console.assert(GCD(50, 20) === 10)
-//
-// /*
-//  * Write a function that prints out the Least Common Multiple of two numbers
-//  */
-//
-// const LCM = (a, b) => {
-// 	if (a === b)
-//     return a
-// }
-//
-//  console.assert(LCM(10, 10) === 10)
-// //MY CODE ONLY WORKS UP UNTIL THIS POINT! :(
+ */
+
+/*
+ * Write a function that finds the Greatest Common Denominator of two numbers
+ * - if no GCD exists, return 1
+ */
+
+const GCD = (a, b) => {
+  if (b == 0)
+   {return a}
+ else
+   {return GCD(b, a % b)}
+}
+console.assert(GCD(5, 1) === 1)
+console.assert(GCD(15, 3) === 3)
+console.assert(GCD(15, 5) === 5)
+console.assert(GCD(50, 20) === 10)
+
+/*
+ * Write a function that prints out the Least Common Multiple of two numbers
+ */
+
+const LCM = (a, b) => {
+	if (a === b)
+    return a
+}
+
+ console.assert(LCM(10, 10) === 10)
+//MY CODE ONLY WORKS UP UNTIL THIS POINT! :(
 
 
 // console.assert(LCM(2, 5) === 10)

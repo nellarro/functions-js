@@ -68,7 +68,7 @@ const findLongestWord = (sentence) => {
   for (let i = 0; i < words.length; i++)
   {
     let word = words[i]
-    if (word.length > longest_word.length)
+    if (word.length > longestWord.length)
     {
       longestWord = word
     }
@@ -89,7 +89,7 @@ console.assert(findLongestWord("dont mess with Texas") === 'Texas')
  */
 
 const GCD = (a, b) => {
-  if (b == 0)
+  if (b === 0)
    {return a}
  else
    {return GCD(b, a % b)}
@@ -104,14 +104,14 @@ console.assert(GCD(50, 20) === 10)
  */
 
 const LCM = (a, b) => {
-	if (a === b)
+	if (a === b) {
     return a
+  }
+    else
+      {return (a*b)/GCD(a,b)}
 }
 
- console.assert(LCM(10, 10) === 10)
-//MY CODE ONLY WORKS UP UNTIL THIS POINT! :(
-
-
-// console.assert(LCM(2, 5) === 10)
-// console.assert(LCM(3, 6) === 6)
-// console.assert(LCM(0, 1) === 1)
+console.assert(LCM(10, 10) === 10)
+console.assert(LCM(2, 5) === 10)
+console.assert(LCM(3, 6) === 6)
+console.assert(LCM(0, 1) === 0)
